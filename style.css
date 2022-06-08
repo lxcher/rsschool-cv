@@ -52,6 +52,21 @@ h1.section-title {
     background-color: #829985;
 }
 
+.footer .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-item img {
+    height: 60px;
+}
+
+.date {
+    font-size: 32px;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
