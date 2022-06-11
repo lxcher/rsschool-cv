@@ -32,11 +32,12 @@ ul {
 a {
     text-decoration: none;
     color: black;
-    transition: color 0.3s;
+    transition: color 0.5s;
 }
 
 a:hover {
-    color: red
+    color: rgb(27, 107, 70);
+    text-shadow: 1px 1px;
 }
 
 h1.section-title {
@@ -53,10 +54,11 @@ h1.section-title {
 }
 
 .footer .container {
-    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
+    
 }
 
 .footer-item img {
@@ -99,8 +101,8 @@ h1.section-title {
 }
 
 .section-skills {
-    background-color:#d4ede7;
     grid-area: skills;
+    background-color:#d4ede7;
 }
 
 .section-contacts {
@@ -164,13 +166,6 @@ h1.section-title {
 
 }
 
-/* @media(max-width: 900px) {
-    .nav-link {
-        padding: 20px 0;
-        font-size: 18px;
-    }
-} */
-
 @media(max-width: 800px) {
     .section-contacts {
         flex-direction: column;
@@ -209,11 +204,11 @@ h1.section-title {
 .avatar-wrapper {
     margin-left: 12%;
     margin-bottom: 50px;
+    text-align: center;
+    overflow: hidden;
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    overflow: hidden;
-    text-align: center;
     background-color: #d4ede7;
 }
 
