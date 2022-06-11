@@ -45,12 +45,28 @@ h1.section-title {
 }
 
 .header {
-    background-color: #829985;
+    background: linear-gradient(90deg, #6fa776, #447888, #948759, #99608d);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .footer {
     height: 100px;
-    background-color: #829985;
+    background: linear-gradient(90deg, #6fa776, #447888, #948759, #99608d);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
 }
 
 .footer .container {
@@ -210,10 +226,22 @@ h1.section-title {
     height: 250px;
     border-radius: 50%;
     background-color: #d4ede7;
+    transition: all 0.7s ease;
+}
+.avatar-wrapper:hover {
+    filter: saturate(150%) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .avatar {
     width: 200px;
+    /* filter: grayscale(100%); */
+    transition: all 0.7s ease;
+    
+
+}
+.avatar:hover {
+    /* filter: grayscale(0%) ; */
+    transform: scale(1.05) translate(0, 10px);
 }
 
 .contacts-wrapper {
