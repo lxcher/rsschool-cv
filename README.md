@@ -1,1 +1,1 @@
-# rsschool-cv
+https://lxcher.github.io/rsschool-cv/
